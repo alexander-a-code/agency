@@ -1,0 +1,304 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden; //! PREVENTS ANY WHITE SPACE ON SIDES ON THE SCREEN
+  font-family: 'Poppins', sans-serif;
+}
+
+/*=== LANDING GRADIENT ===*/
+.landing {
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #1da1f2, #981ceb);
+
+  /*=== HEADINGS & ICONS ===*/
+  & h4 {
+    color: white;
+    font-weight: 200;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    padding-top: 7rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  }
+
+  & h1 {
+    color: white;
+    font-weight: 200;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    padding-top: 7rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+    padding: 1.8rem 0;
+    margin-right: 0.8rem;
+  }
+
+  .home {
+    padding-bottom: 7rem;
+
+    & .fa-stack.fa-2x {
+      font-size: 2.3rem;
+    }
+
+    .fa-stack {
+      &-2x {
+        opacity: 0.15;
+      }
+
+      &-1x {
+        opacity: 0.7;
+      }
+
+      .fa-globe-americas {
+        opacity: 1;
+        transform: scale(1.25);
+      }
+    }
+  }
+}
+
+/*=== NAVIGATION ===*/
+.navbar {
+  background-image: linear-gradient(90deg, #1da1f2, #981ceb);
+  padding: 0.3rem 0 0.6rem; //*top left/right bottom
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  &-brand img {
+    height: 3rem; //48px
+    padding-top: 0.2rem;
+  }
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.12rem;
+  font-size: 1.2rem;
+  text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  margin-right: 0.8rem;
+
+  &.active,
+  &:hover {
+    border-bottom: 0.05rem solid white;
+  }
+}
+
+/*=== CONTENT STYLE ===*/
+.fa-asterisk {
+  font-size: 1rem;
+  margin-bottom: 0.5rem; //em vertical center this way lol
+}
+
+h3 {
+  text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.w-100 {
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1); //това адва сянка хоризонтал долу и вертикално дясно
+}
+
+/*=== FIXED BACKGROUND IMG ===*/
+.fixed-background {
+  overflow: hidden; /*-- Correction for iOS --*/
+  padding: 12rem 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.fixed {
+  background-image: url(../img/macbook.jpg);
+  position: fixed;
+  // opacity: 0.5;
+}
+/*=== FOOTER ===*/
+footer {
+  background-image: linear-gradient(90deg, #1da1f2, #981ceb);
+  box-shadow: 0 -1rem 1rem rgba(0, 0, 0, 0.15); //! negative vertical valu -1rem to apear on top insted of beneath it
+  padding: 2.5rem 2rem;
+
+  & img {
+    height: 3.5rem;
+    margin: 0 auto 2rem; // margin top 0 left/right auto bottom 2rem
+  }
+
+  & a,
+  p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  & a:hover {
+    color: white; //ul and socket links on hover white
+  }
+
+  & .social {
+    list-style-type: none;
+    display: flex; // display the icons inline
+    max-width: 18rem; //*bring icons close together
+    padding: 0; //remove padding bottom 1.5rem top 1rem
+    margin: 0 auto; //!center the icons remove margin
+    & li {
+      //!center the icons
+      margin: 0 auto;
+    }
+
+    & .svg-inline--fa {
+      font-size: 2.2rem;
+      &:hover {
+        color: #d1d1d1;
+      }
+    }
+  }
+}
+
+.socket {
+  background-image: linear-gradient(90deg, #1da1f2, #981ceb);
+  text-align: center;
+  padding: 1rem;
+  border-top: 0.05rem solid white;
+
+  & a,
+  p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+/*=== SOCKET ===*/
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+.landing {
+  & h1 {
+    font-size: 2.6rem;
+  }
+
+  & .home .fa-stack.fa-2x {
+    font-size: 2rem;
+  }
+}
+
+.fixed-background {
+  overflow: hidden; /*-- Correction for iOS --*/
+  padding: 9rem 0;
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+  .landing {
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & .home .fa-stack.fa-2x {
+      font-size: 1.7rem;
+    }
+  }
+
+  .fixed-background {
+    overflow: hidden; /*-- Correction for iOS --*/
+    padding: 7rem 0;
+  }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+
+  .landing {
+    & h4 {
+      font-size: 1.3rem;
+    }
+
+    & h1 {
+      font-size: 1.5rem;
+    }
+
+    & .home .fa-stack.fa-2x {
+      font-size: 1.5rem;
+    }
+  }
+
+  .fixed-background {
+    h1 {
+      font-size: 1.1rem;
+      & .fa-asterisk {
+        font-size: 0.5rem;
+      }
+    }
+    padding: 5rem 0;
+  }
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/ //!PREVENT HORIZONTAL SCROLLING FROM THE FIXED IMAGE BACKGROUND
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/ //!SPRECIFIC FOR IPHONES
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}

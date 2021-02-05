@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Design made Easy</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Start Landing Header-->
+	<div class="landing"><!--!WRAPPER CLASS WRAPS ALL TOGETHER-->
+		<h4>Modern Desing Concepts</h4>
+		<h1>Welcome to our Website</h1>
+		<div class="row home justify-content-center text-center px-md-5 px-lg-0">
+			<!-- 
+			justify-conter за центриране на съдържанието в колоните text-center за текста px-md-5 е падинг за md res 768px px-lg-0 е да се махне падинга на large
+			X-Small 	None 	<576px
+			Small 	sm 	≥576px
+			Medium 	md 	≥768px
+			Large 	lg 	≥992px
+			Extra large 	xl 	≥1200px
+			Extra extra large 	xxl 	≥1400px
+			-->
+			<div class="col-3 col-sm-3 col-md-2 col-lg-1 p-0"><!--!col 1-->
+				<!--
+					grid за иконките на small screen 576px 3 колони на medium 768px 2 колони на large 992px 1 колона и махаме падинга идващ от по горе p-0
+				-->
+				<span class="fa-stack fa-2x"><!--globe icon inside of a circle-->
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fas fas fa-globe-africa fa-stack-1x fa-inverse"></i>
+				  </span>
+			</div>
+			<div class="col-3 col-sm-3 col-md-2 col-lg-1 p-0"><!--!col 2-->
+				<span class="fa-stack fa-2x">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fas fas fa-globe-asia fa-stack-1x fa-inverse"></i>
+				</span>
+			</div>
+			<div class="col-3 col-sm-3 col-md-2 col-lg-1 p-0"><!--!col 3-->
+				<span class="fa-stack fa-2x">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fas fas fa-globe-americas fa-stack-1x fa-inverse"></i>
+				</span>
+			</div>
+			<div class="col-3 col-sm-3 col-md-2 col-lg-1 p-0"><!--!col 4-->
+				<span class="fa-stack fa-2x">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fas fas fa-globe-europe fa-stack-1x fa-inverse"></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<!-- End Landing Header -->
+
+
+	<!-- Navigation -->
+	<nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
+		<div class="container px-3">
+			<a href="index.html" class="navbar-brand"><img src="/img/logo-white.png" alt="logo" title="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive"><!--collapse hide the content navbar-collapse full navbar-->
+				<ul class="navbar-nav ml-auto"><!--positioning is by margin auto left right whatever-->
+					<li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+					<li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="index.html" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="index.html" class="nav-link">Projects</a></li>
+					<li class="nav-item"><a href="index.html" class="nav-link">About us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navigation -->
+	
+
+	<!-- Heading -->
+	<div class="container">
+		<div class="row py-0 py-md-3 py-lg-5"><!--no padding on small 1rem on medium768px 3rem on large-->
+			<div class="col-12 text-center text-uppercase mt-5"><!--full width col center text mt 3rem-->
+				<h1 class="text-dark pb-3">
+					<i class="fas fa-asterisk"></i>
+					Let's Build It
+					<i class="fas fa-asterisk"></i>
+				</h1>
+				<div class="border-top border-dark w-50 mx-auto"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Three Column Section -->
+	<div class="container pb-4"><!--padding bottom 1.5rem-->
+		<div class="row pt-3 pb-5 text center"><!--pb 1rem centered text inside the row-->
+			<div class="col-lg-4 p-4">
+				<!--!трябва да се сметне 12 колони делено на колко колони ще има 3 в случая 12/3=4-->
+				<h3 class="my-4">Parallax Design</h3>
+				<img src="img/parallax.jpg" alt="" class="w-100 rounded"><!--w-100 да заеме цялото място в колоната rounded border-->
+				<p class="p-lead pt-3">The best design is up to the eyes of the beholder</p><!--p=lead font-weight 300 pt 1rem-->
+				<a href="index.html" class="btn btn-outline-dark btn-md">HTML&CSS3</a>
+			</div>
+			<div class="col-lg-4 p-4">
+				<h3 class="my-4">Canvas Design</h3>
+				<img src="img/canvas.jpg" alt="" class="w-100 rounded">
+				<p class="p-lead pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<a href="index.html" class="btn btn-outline-dark btn-md">Bootstrap Design</a>
+			</div>
+			<div class="col-lg-4 p-4">
+				<h3 class="my-4">Resume Design</h3>
+				<img src="img/resume.jpg" alt="" class="w-100 rounded"><!--w-100 да заеме цялото място в колоната rounded border-->
+				<p class="p-lead pt-3">The best design is up to the eyes of the beholder</p><!--p=lead font-weight 300 pt 1rem-->
+				<a href="index.html" class="btn btn-outline-dark btn-md">Theme Bundle</a>
+			</div>
+		</div>
+	</div>
+	<!-- End Three Column Section -->
+
+	
+	<!-- Start Fixed Background IMG -->
+	<div class="fixed-background"><!--used for to add spacing-->
+		<div class="col-12 text-center text-uppercase mt-5"><!--full width col center text mt 3rem-->
+			<h1 class="text-white pb-3">
+				<i class="fas fa-asterisk"></i>
+				Text over fixed Background image
+				<i class="fas fa-asterisk"></i>
+			</h1>
+			<div class="border-top border-white w-50 mx-auto"></div>
+		</div>
+
+		<div class="fixed-wrap">
+			<div class="fixed"></div><!--used for the image-->
+		</div>
+	</div>
+	<!-- End Fixed Background IMG -->
+
+
+	<!-- Heading -->
+	<div class="container">
+		<div class="row py-0 py-md-3 py-lg-5">
+			<div class="col-12 text-center text-uppercase my-5 mb-lg-3">
+				<h1 class="text-dark pb-3">
+					<i class="fas fa-asterisk"></i>
+					Website Designs
+					<i class="fas fa-asterisk"></i>
+				</h1>
+				<div class="border-top border-dark w-50 mx-auto"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Thwo Column Section -->
+	<div class="container pb-5">
+		<div class="row pt-3 pb-5 px-4">
+			<!--half screen sigle col lg 2 cols .. 2 cols both using half screen-->
+			<div class="col-lg-6 mb-5 my-lg-auto"><!--my margin top bottom auto-->
+				<h3 class="text-dark mb-3">See the colection.</h3>
+				<p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum hic, aliquid aperiam neque alias qui culpa. Facilis nulla veniam esse.</p>
+				<a href="index.html" class="btn btn-outline-dark btn-lg">Theme bundle pack</a>
+			</div>
+			<div class="col-lg-6"><img src="/img/12-website-bundle.jpg" alt="12bundle" class="w-100 rounded"></div>
+		</div>
+	</div>
+
+	<!-- End Two Column Section -->
+
+
+	<!-- Start Footer -->
+	<footer class="mt-4">
+		<div class="container">
+			<div class="row text-light text-center my-4">
+				<div class="col-lg-4 px-4 my-auto"><!--my-auto VERTICAL CENTER-->
+					<img src="/img/logo-white.png" alt="logo">
+					<p class="lead color-primary">Buld a modern website design</p>
+					<ul class="social pt-3 pb-4 pb-lg-auto"><!--!padding top 1rem bottom 1.5rem remove it on lg-->
+						<li><a href="index.html"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="index.html"><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="index.html"><i class="fab fa-instagram-square"></i></a></li>
+						<li><a href="index.html"><i class="fab fa-youtube-square"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 px-4 my-4"><!--3 cols on lg padding 1.5ren left/right margin top/bottom 1.5rem-->
+					<h3 class="border-top border-bottom w-75 mx-auto py-2 mb-3">Helpfull Links</h3><!--!added top/border bottom with widht 75% of the column and padding between the the border and the text-->
+					<p><a href="#" target="_blank" rel="noopener noreferrer">Bundle Pack</a></p>
+					<p><a href="#" target="_blank" rel="noopener noreferrer">Website Themes</a></p>
+					<p><a href="#" target="_blank" rel="noopener noreferrer">Complete Courses</a></p>
+					<p><a href="#" target="_blank" rel="noopener noreferrer">Recources</a></p>
+					<!--*putting links inside paragraph give us line height and spacing them ou bit more-->
+				</div>
+				<div class="col-lg-4 px-4 my-4"><!--3 cols on lg padding 1.5ren left/right margin top/bottom 1.5rem-->
+					<h3 class="border-top border-bottom w-75 mx-auto py-2 mb-3">Contact us</h3>
+					<p><a href="#" target="_blank" rel="noopener noreferrer">Bundle Pack</a></p>
+					<p><a href="tel:+0988999999">0988 999 999</a></p>
+					<p><a href="mailto:+mamboj466@gmail.com">mamboj466@gmail.com</a></p>
+					<p>100 Street Name</p>
+					<p>City, State, 00000</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+	<!-- Start Socket -->
+	<div class="socket"><p>&copy; <a href="#" target="_blank" rel="noopener noreferrer">noobie.com</a></p></div>
+	<!-- End Socket -->
+
+
+	<!-- Script Source Files -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+
+	<!-- End Script Source Files -->
+</body>
+</html>
